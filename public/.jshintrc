@@ -1,0 +1,33 @@
+{
+    "bitwise": false,
+    "curly": true,
+    "eqeqeq": true,
+    "forin": true,
+    "indent": 4,
+    "immed": true,
+    "latedef": "nofunc",
+    "maxdepth": 3,
+    "maxlen": 150,
+    "newcap": false,
+    "nonbsp": true,
+    "nonew": true,
+    "noempty": true,
+    "predef": [
+        "angular",
+    ],
+    "quotmark": "single",
+    "strict": true,
+    "sub": true,
+    "undef": true,
+    "unused": true,
+
+
+    "esnext": false,
+    "noyield": false,
+
+    "node": true,
+    "devel": true,
+
+    "trailing": true,
+    "onevar": true
+}
