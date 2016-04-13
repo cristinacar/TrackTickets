@@ -1,2 +1,2 @@
 # TrackTickets
-Ticket management 
+Ticket management
