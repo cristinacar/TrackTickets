@@ -1,0 +1,25 @@
+{
+  "name": "track-tickets",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "latest",
+    "angular":"1.5.x",
+    "angular-ui-router": "latest",
+    "angular-material": "latest"
+  },
+  "private": true,
+  "homepage": "https://github.com/cristinacar/TrackTickets",
+  "description": "Tickets tracker",
+  "main": "",
+  "authors": [
+    "Cristina Carstoiu"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

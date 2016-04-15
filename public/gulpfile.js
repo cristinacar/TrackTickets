@@ -173,8 +173,8 @@ gulp.task('link-css', [ 'build-css' ], function( ) {
              scripts: isProduction || args.devtest ?
                 [(frontend_exportCSS + '/' + frontend_minifileCSS)] :
                 [(frontend_exportCSS + '/style.css')],
-            startTag: '<!-- MAIN STYLE -->',
-            endTag: '<!-- END MAIN STYLE -->',
+            startTag: '<!-- STYLE -->',
+            endTag: '<!-- END STYLE -->',
             fileTmpl: isProduction || args.devtest ? '<link href="%s" rel="stylesheet"/>' : '<link href="%s" rel="stylesheet"/>',
             appRoot: './static/'
         }))
@@ -184,7 +184,7 @@ gulp.task('link-css', [ 'build-css' ], function( ) {
 ////////////////////////////////////////////////////////////////////////////////
 // Watch the scss modification and do build css
 ////////////////////////////////////////////////////////////////////////////////
-gulp.task( 'watchdevelopment',function( ) {
+gulp.task( 'watch',function( ) {
     gulp.watch( frontend_srcSCSS + '/**/*.scss',['build-css'] );
     gulp.watch( [
             frontend_srcJS  + '/*.js',
