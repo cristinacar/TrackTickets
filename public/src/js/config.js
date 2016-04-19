@@ -3,9 +3,9 @@
 // APP CONFIG / SET PAGE ROUTES
 // =============================================================================
 angular
-    .module( 'tickets' )
+    .module( 'track' )
     .config( [ '$httpProvider',
         function ( $httpProvider) {
-            $httpProvider.interceptors.push( 'errorInterceptor' );
+            //$httpProvider.interceptors.push( 'errorInterceptor' );
         }
     ] );

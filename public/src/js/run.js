@@ -3,11 +3,10 @@
 // APP RUN
 // =============================================================================
 angular
-    .module( 'tickets' )
-    .run( [ '$rootScope', '$state', 'authenticationService',
-        function ( $rootScope, $state, authenticationService ) {
+    .module( 'track' )
+    .run( [ '$rootScope', '$state',
+        function ( $rootScope, $state ) {
             $rootScope.$on( '$stateChangeStart', function ( e, toState, param, fromState ) {
-
             } );
         }
     ] );

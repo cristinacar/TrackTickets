@@ -112,7 +112,7 @@ gulp.task('build-js', function ( ) {
 ////////////////////////////////////////////////////////////////////////////////
 gulp.task('link-js', [ 'build-js' ], function( ) {
     var isProduction = args.production;
-    return gulp.src('./static/index.html')
+    return gulp.src('./index.html')
         .pipe(linker({
             scripts: isProduction || args.devtest ?
                 [(frontend_exportJS + '/' + frontend_minifileJS)] :
@@ -126,7 +126,6 @@ gulp.task('link-js', [ 'build-js' ], function( ) {
                     (frontend_srcJS + '/common/service/*.js'),
                     (frontend_srcJS + '/common/factory/*.js'),
                     (frontend_srcJS + '/common/directive/*.js'),
-                    (frontend_srcJS + '/common/filter/*.js'),
                     (frontend_srcJS + '/module/**/module.js'),
                     (frontend_srcJS + '/module/**/route.js'),
                     (frontend_srcJS + '/module/**/*.js')
@@ -136,7 +135,7 @@ gulp.task('link-js', [ 'build-js' ], function( ) {
             fileTmpl: isProduction || args.devtest ? '<script src="../%s"></script>' : '<script src="../%s"></script>',
             appRoot: 'static/'
         }))
-        .pipe(gulp.dest('./static/'));
+        .pipe(gulp.dest('./'));
 });
 
 ////////////////////////////////////////////////////////////////////////////////

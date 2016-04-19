@@ -1,12 +1,6 @@
 'use strict';
 // =============================================================================
-// SET ANGULAR APPLICATION
+// TICKETS MODULE
 // =============================================================================
 angular
-    .module( 'track' , [
-        'ngAnimate',
-        'ui.router',
-        // 'ngMaterial',
-        'track.common',
-        'track.tickets'
-    ] );
+    .module( 'track.tickets', [ ] );
