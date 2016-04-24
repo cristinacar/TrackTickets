@@ -9,8 +9,32 @@ angular
 dashboardCtrl.$inject = [
    '$scope'
 ];
-/* jshint -W101 */
 function dashboardCtrl( $scope ) {
-/* jshint +W101 */
-   
+   $scope.model = {
+   		cards: [ 
+   			{
+   				title: 'Backlog',
+   				theme: 'yellowTheme',
+   				positon: 1
+   			},
+   			{
+   				title: 'TO DO',
+   				theme: 'orangeTheme',
+   				positon: 3
+   			},
+   			{
+   				title: 'Review',
+   				theme: 'greyTheme',
+   				positon: 2 
+   			}, 
+   			{
+   				title: 'Done',
+   				theme: 'greenTheme',
+   				positon: 4
+   			}
+   		]
+   };
+
+
+
 }

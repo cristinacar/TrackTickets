@@ -167,7 +167,7 @@ gulp.task('build-css', [ ], function ( ) {
 ////////////////////////////////////////////////////////////////////////////////
 gulp.task('link-css', [ 'build-css' ], function( ) {
     var isProduction = args.production;
-    return gulp.src('./static/index.html')
+    return gulp.src('./index.html')
         .pipe(linker({
              scripts: isProduction || args.devtest ?
                 [(frontend_exportCSS + '/' + frontend_minifileCSS)] :
@@ -175,9 +175,9 @@ gulp.task('link-css', [ 'build-css' ], function( ) {
             startTag: '<!-- STYLE -->',
             endTag: '<!-- END STYLE -->',
             fileTmpl: isProduction || args.devtest ? '<link href="%s" rel="stylesheet"/>' : '<link href="%s" rel="stylesheet"/>',
-            appRoot: './static/'
+            appRoot: 'static/'
         }))
-        .pipe(gulp.dest('./static/'));
+        .pipe(gulp.dest('./'));
 });
 
 ////////////////////////////////////////////////////////////////////////////////

@@ -5,7 +5,8 @@
     "jquery": "latest",
     "angular":"1.5.x",
     "angular-ui-router": "latest",
-    "angular-material": "latest"
+    "angular-material": "latest",
+     "font-awesome": "fontawesome#~4.4.0"
   },
   "private": true,
   "homepage": "https://github.com/cristinacar/TrackTickets",

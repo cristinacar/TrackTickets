@@ -6,7 +6,7 @@ angular
     .module( 'track' , [
         'ngAnimate',
         'ui.router',
-        // 'ngMaterial',
+        'ngMaterial',
         'track.common',
         'track.tickets'
     ] );

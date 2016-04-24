@@ -1,0 +1,41 @@
+<md-card layout="column" data-ng-if="!details.addNewList"
+         md-theme="{{ details.theme ? details.theme : 'default' }}" 
+         md-theme-watch>
+     <md-toolbar>
+        <div class="md-toolbar-tools">
+        <h2>
+          <span>{{details.title}}</span>
+        </h2>
+        <span flex></span>
+        <md-button class="md-icon-button fa fa-plus" aria-label="Add">
+        </md-button>
+        <md-button class="md-icon-button fa fa-bars" aria-label="Settings">
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-divider></md-divider>
+    <md-card-content layout="column" layout-align="space-between">
+        <div data-ticket-card></div>
+    </md-card-content>
+</md-card>
+
+
+<md-card layout="column" data-ng-if="details.addNewList"
+         md-theme="{{ details.theme ? 'default': details.theme }}" 
+         md-theme-watch>
+     <md-toolbar>
+        <div class="md-toolbar-tools">
+        <h2>
+          <span>Add Title</span>
+        </h2>
+        <span flex></span>
+        <md-button class="md-icon-button fa fa-plus" aria-label="Add">
+        </md-button>
+        <md-button class="md-icon-button fa fa-bars" aria-label="Settings">
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-divider ng-if="!$last"></md-divider>
+    <md-card-content layout="column" layout-align="space-between">
+    </md-card-content>
+</md-card>

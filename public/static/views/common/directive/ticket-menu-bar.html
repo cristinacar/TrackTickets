@@ -1,0 +1,42 @@
+<md-menu-bar>
+    <md-menu>
+        <button class="fa fa-bars" ng-click="$mdOpenMenu()"></button>
+        <md-menu-content>
+            <md-menu-item>
+                <md-button ng-click="ctrl.sampleAction('share', $event)">
+                    Edit
+                </md-button>
+            </md-menu-item>
+            <md-menu-divider></md-menu-divider>
+            <md-menu-item>
+                <md-menu>
+                    <md-button ng-click="$mdOpenMenu()">New</md-button>
+                    <md-menu-content>
+                        <md-menu-item>
+                            <md-button ng-click="ctrl.sampleAction('New Document', $event)">Change Theme</md-button>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button ng-click="ctrl.sampleAction('New Spreadsheet', $event)">Add Contributor</md-button>
+                        </md-menu-item>
+                    </md-menu-content>
+                </md-menu>
+            </md-menu-item>
+            <md-menu-item>
+                <md-button ng-click="ctrl.sampleAction('Open', $event)">
+                    Open...
+                </md-button>
+            </md-menu-item>
+            <md-menu-item>
+                <md-button disabled="disabled" ng-click="ctrl.sampleAction('Rename', $event)">
+                    Rename
+                </md-button>
+            </md-menu-item>
+            <md-menu-divider></md-menu-divider>
+            <md-menu-item>
+                <md-button ng-click="ctrl.sampleAction('Print', $event)">
+                    Delete
+                </md-button>
+            </md-menu-item>
+        </md-menu-content>
+    </md-menu>
+</md-menu-bar>  
